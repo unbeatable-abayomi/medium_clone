@@ -1,8 +1,28 @@
-import React from "react";
-import ReactDOM from "react-dom";
+
 //import './index.css';
-import App from "./App";
 //import reportWebVitals from './reportWebVitals';
+import React from 'react';
+import ReactDOM from "react-dom";
+import { BrowserRouter as Router } from 'react-router-dom';
+import Routes from './routes';
+import Topbar from './node_modules/components/topbar';
+
+const App =() => {
+  return (
+    
+      
+      <Router>
+        <Topbar/>
+       <Routes/>
+      </Router>
+  
+  );
+}
+
+export default App;
+
+
+
 
 ReactDOM.render(
   <React.StrictMode>
